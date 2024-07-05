@@ -1,0 +1,56 @@
+/* style of user_shell with template
+Author by: Rahma Faris
+email:rahmafaris981@gmail.com */
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    border-top-style:  solid;
+    border-top-color: black;
+
+    }
+table{
+    margin-left: 10%;
+    width: 80%;
+    border: black;
+    border-style: solid;
+}
+th{
+    background-color: #cccccc; /* to make header of table with grey colour*/
+
+}
+
+tr{
+    text-align: center;
+}
+form {
+margin-left: 25%; 
+}
+
+.userData{
+    width: 200px;
+    height: 30px;
+    margin-left: 48px;
+    border-color: black;
+
+}
+.nameData{
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    border-color: black;
+
+}
+div{
+    margin-bottom: 10px;
+}
+
+.btnSubmit{
+    margin-left: 30%;
+    border-style: solid;
+    width: 5%;
+    border-color: black;
+    box-shadow: 3px 4px 7px black;
+}
