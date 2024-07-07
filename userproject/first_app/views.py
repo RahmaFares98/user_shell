@@ -15,6 +15,6 @@ def add_user(request):
         last_name = request.POST['last_name']
         email = request.POST['email']
         age = request.POST['age']
-        create_user(first_name,last_name,email,age)#call create user 
+        models.create_user(first_name,last_name,email,age)#call create user 
         return redirect('/')
     return HttpResponse("Invalid request method.", status=400)# if there is error return this 
