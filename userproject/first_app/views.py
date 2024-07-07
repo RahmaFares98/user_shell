@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import *
 from django.http import HttpResponse
-from .models import User ,create_user
+from .models import User 
 
 def users_list(request):
     users = User.objects.all()
@@ -15,6 +15,6 @@ def add_user(request):
         last_name = request.POST['last_name']
         email = request.POST['email']
         age = request.POST['age']
-        models.create_user(first_name,last_name,email,age)#call create user 
+        User.create_user(first_name=first_name, last_name=last_name, email=email, age=age)
         return redirect('/')
-    return HttpResponse("Invalid request method.", status=400)# if there is error return this 
+    return HttpResponse("invalid rotation")
